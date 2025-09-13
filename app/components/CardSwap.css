@@ -17,8 +17,7 @@
   /* Light theme colors */
   border: 1px solid #e2e8f0;
   background: #ffffff;
-  color: #334155; /* Added text color for content */
-  
+  color: #334155; 
   transform-style: preserve-d;
   will-change: transform;
   backface-visibility: hidden;

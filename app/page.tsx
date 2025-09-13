@@ -1,4 +1,3 @@
-// FIX: This line tells React this is a client-side component, which is necessary for hooks like useEffect and useState.
 'use client';
 
 import React, { Children, cloneElement, forwardRef, isValidElement, useEffect, useMemo, useRef, useState, useCallback, ReactNode, useImperativeHandle } from 'react';
@@ -27,12 +26,10 @@ declare global {
 
 interface CardProps { customClass?: string; icon: ReactNode; title: string; className?: string; children: ReactNode; style?: React.CSSProperties; onClick?: (event: React.MouseEvent<HTMLDivElement>) => void; }
 interface CardSwapProps { width?: number; height?: number; cardDistance?: number; verticalDistance?: number; delay?: number; pauseOnHover?: boolean; onCardClick?: (index: number) => void; skewAmount?: number; easing?: 'elastic' | 'power'; children: ReactNode; }
-// Removed duplicate local declaration of RotatingTextRef
 interface RotatingTextProps { texts: string[]; transition?: Transition; initial?: TargetAndTransition | VariantLabels; animate?: TargetAndTransition | VariantLabels; exit?: TargetAndTransition | VariantLabels; animatePresenceMode?: 'wait' | 'popLayout' | 'sync'; animatePresenceInitial?: boolean; rotationInterval?: number; staggerDuration?: number; staggerFrom?: 'first' | 'last' | 'center' | 'random' | number; loop?: boolean; auto?: boolean; splitBy?: 'characters' | 'words' | 'lines' | string; onNext?: (newIndex: number) => void; mainClassName?: string; splitLevelClassName?: string; elementLevelClassName?: string; }
 interface DockItemData { icon: ReactNode; label: string; onClick?: () => void; }
 interface DockProps { items: DockItemData[]; }
 interface DockItemProps { mouseX: MotionValue<number>; item: DockItemData; }
-// FIX: Define the props and data shape for Dock components
 interface DockItemData {
   icon: ReactNode;
   label: string;
@@ -49,12 +46,12 @@ interface DockItemProps {
 }
 
 // --- RotatingText Component ---
-// FIX: Type the function parameter
+
 function cn(...classes: (string | undefined | null | boolean)[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
-// FIX: Define the shape of the functions exposed by useImperativeHandle
+
 export interface RotatingTextRef {
   next: () => void;
   previous: () => void;

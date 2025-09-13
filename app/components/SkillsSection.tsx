@@ -8,9 +8,8 @@ import {
   SiNodedotjs, SiPython, SiDocker, SiPostgresql, SiPrisma, SiCss3, SiHtml5, SiExpress, SiGit, SiVercel, SiCplusplus
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa6';
-import { SplitText } from './SplitText'; // Import our new component
+import { SplitText } from './SplitText'; 
 
-// 1. The Data: Each skill has a name, icon, and category
 const skillsData = [
   // Frontend
   { name: 'React', icon: <SiReact />, category: 'Frontend' },

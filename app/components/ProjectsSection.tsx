@@ -5,29 +5,26 @@ import Image, { StaticImageData } from 'next/image'; // FIX 1: Imported StaticIm
 import FuzzyText from './FuzzyText';
 import ScrollStack, { ScrollStackItem } from './ScrollStack';
 
-// FIX 2: Imported all three project images
 import projectImage1 from './project_images/Vaultrix.png';
 import projectImage2 from './project_images/CineCritique.png';
 import projectImage3 from './project_images/Codebase.png';
 
-// --- Type Definition for a single project ---
 type Project = {
   id: number;
   title: string;
   description: string;
-  imageUrl: StaticImageData; // FIX 3: Updated the type from string
+  imageUrl: StaticImageData; 
   techStack: string[];
   liveUrl: string;
   codeUrl: string;
 };
 
-// --- Your Project Data (now with a specific type) ---
 const projectsData: Project[] = [
   {
     id: 1,
     title: "Vaultrix - Customizable Developer Portfolio Builder",
     description: "A full-stack platform that helps developers create their portfolio by fetching their GitHub repositories. Users can select which repos to include, reorder projects via a drag-and-drop dashboard, customize the portfolio, and deploy it to a custom subdomain.",
-    imageUrl: projectImage1, // Use the variable
+    imageUrl: projectImage1, 
     techStack: ["Next.js", "React", "Node.js",  "PostgreSQL", "Vercel"],
     liveUrl: "#",
     codeUrl: "#"
@@ -112,7 +109,7 @@ export const ProjectsSection = () => {
                       <a href={project.liveUrl} className="bg-slate-900 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-700 transition-colors text-center">
                         Live Demo
                       </a>
-                      {/* Added the missing View Code button for consistency */}
+                      
                       
                     </div>
                   </div>

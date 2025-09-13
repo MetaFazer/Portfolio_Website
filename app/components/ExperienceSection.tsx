@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Briefcase, Code, GraduationCap, ChevronDown } from 'lucide-react';
 
-// --- Type Definitions ---
 type ExperienceItem = {
   icon: React.ReactNode;
   title: string;
@@ -16,8 +15,7 @@ type ExperienceItem = {
   technologies: string[];
 };
 
-// --- Your Experience Data ---
-// You can easily update this with your own roles.
+
 const experienceData: ExperienceItem[] = [
   {
     icon: <Briefcase size={20} />,

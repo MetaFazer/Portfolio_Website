@@ -25,14 +25,14 @@ export const SplitText = ({ children, className, tag: Tag = 'p' }: SplitTextProp
   const text = typeof children === 'string' ? children : '';
   const words = text.split(' ');
 
-  // Updated container to loop the animation
+  
   const containerVariants: Variants = {
     hidden: {},
     visible: {
       transition: {
         staggerChildren: 0.08,
-        repeat: Infinity, // Loop the animation forever
-        repeatDelay: 3,   // Wait 3 seconds before repeating
+        repeat: Infinity, 
+        repeatDelay: 3,   
       },
     },
   };
@@ -55,7 +55,7 @@ export const SplitText = ({ children, className, tag: Tag = 'p' }: SplitTextProp
 
   return (
     <Tag className={className}>
-      {/* The animation will only render after fonts are loaded */}
+      
       {fontsLoaded && (
         <motion.span
           aria-hidden
@@ -74,7 +74,7 @@ export const SplitText = ({ children, className, tag: Tag = 'p' }: SplitTextProp
           ))}
         </motion.span>
       )}
-      {/* A hidden version of the text for SEO and initial layout */}
+      
       <span className="sr-only">{text}</span>
     </Tag>
   );

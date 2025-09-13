@@ -2,7 +2,6 @@
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-// Make sure this line exists and is correct
 import "./globals.css"; 
 
 const inter = Inter({ subsets: ["latin"] });

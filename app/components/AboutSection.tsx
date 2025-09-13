@@ -23,7 +23,7 @@ export const AboutSection = () => {
           <div className="bg-slate-50 rounded-2xl p-8 flex flex-col items-center text-center shadow-md h-full lg:col-span-1">
             <div className="relative w-32 h-32 rounded-full overflow-hidden shadow-lg">
   <Image
-    src={profilePic} // <-- IMPORTANT: Change this to your image's filename
+    src={profilePic} 
     alt="A photo of Abhishek Singh"
     fill
     className="object-cover"
@@ -55,10 +55,10 @@ export const AboutSection = () => {
             </div>
           </div>
 
-          {/* RIGHT COLUMN → Storytelling Block */}
+          
           <div className="lg:col-span-2 space-y-6 text-slate-700 text-lg leading-relaxed">
             
-            {/* The "About Me" heading is now here */}
+            
             <h2 className="text-4xl font-bold text-slate-900 mb-6">
               About Me
             </h2>

@@ -1,6 +1,6 @@
 /* app/components/GlitchText.css */
 .glitch {
-  /* Using a dark color for the text to be visible on a white card */
+  
   color: #1e293b; /* slate-900 */
   white-space: nowrap;
   font-weight: 900;
