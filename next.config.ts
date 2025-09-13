@@ -1,7 +1,20 @@
-import type { NextConfig } from "next";
+// next.config.ts
 
-const nextConfig: NextConfig = {
-  /* config options here */
+import type { NextConfig } from 'next';
+
+const config: NextConfig = {
+  // If you have any OTHER configurations for your project, they would go here.
+  // For now, we only need the 'images' configuration.
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
 };
 
-export default nextConfig;
+export default config;

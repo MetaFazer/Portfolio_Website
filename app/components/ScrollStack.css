@@ -1,0 +1,42 @@
+/* app/components/ScrollStack.css */
+.scroll-stack-scroller {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden; /* Changed from visible for safety */
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  transform: translateZ(0);
+  will-change: scroll-position;
+}
+
+.scroll-stack-inner {
+  padding: 10vh 2rem 50rem; /* Adjusted padding for better fit */
+  min-height: 100%; /* Changed from 100vh */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.scroll-stack-card {
+  transform-origin: top center;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  min-height: 20rem; /* Changed to min-height */
+  width: 100%;
+  margin: 30px 0;
+  padding: 3rem;
+  border-radius: 40px;
+  box-sizing: border-box;
+  transform: translateZ(0);
+  position: relative;
+  background-color: #f8fafc; /* Added a light background */
+}
+
+.scroll-stack-end {
+  width: 100%;
+  height: 1px;
+}

@@ -1,16 +1,10 @@
-/* app/globals.css */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/* app/components/CardSwap.css */
 .card-swap-container {
   position: absolute;
   bottom: 0;
   right: 0;
-  transform: translate(25%, 25%); /* Adjusted for a nice peeking effect */
+  transform: translate(25%, 25%);
   transform-origin: bottom right;
-
   perspective: 900px;
   overflow: visible;
 }
@@ -20,11 +14,12 @@
   top: 50%;
   left: 50%;
   border-radius: 12px;
-  /* I've updated these colors to match your site's light theme */
+  /* Light theme colors */
   border: 1px solid #e2e8f0;
   background: #ffffff;
-
-  transform-style: preserve-3d;
+  color: #334155; /* Added text color for content */
+  
+  transform-style: preserve-d;
   will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;

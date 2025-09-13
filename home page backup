@@ -15,8 +15,6 @@ import { AboutSection } from './components/AboutSection';
 import { CertificationsSection } from './components/CertificationsSection';
 import { Award } from 'lucide-react'; // A new icon for Certifications
 import { Footer } from './components/Footer';
-import GlitchText from './components/GlitchText'; // Import our new component
-
 
 
 declare global {
@@ -334,7 +332,7 @@ const App = () => {
       <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
       <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
       <a href="#blog" onClick={() => setMenuOpen(false)}>Blog</a>
-      <a href="#certifications" onClick={() => setMenuOpen(false)}>Certifications</a>
+      <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
     </nav>
   </div>
 )}
@@ -352,7 +350,7 @@ const App = () => {
           Hey, I'm glad you're here 🚀
         </h3>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tighter text-slate-900 mb-6 leading-none">
-          I&apos;m Abhishek!
+          I&apos;m Abhishek 😎
         </h1>
         <h2 className="text-2xl md:text-5xl font-bold tracking-tighter text-slate-800 leading-tight">
           <div>Building cool stuff for the web,</div>
@@ -387,33 +385,21 @@ const App = () => {
             pauseOnHover={false}
           >
             <Card>
-              <div className="p-8">
-                <GlitchText className="text-7xl" enableOnHover={false} speed={2}>Code</GlitchText>
-                <GlitchText className="text-7xl mb-4" enableOnHover={false} speed={2}>Engineer</GlitchText>
-                <p className="text-2xl leading-tight font-bold">
-                  Writing clean, efficient,<br />
-                  and scalable code.
-                </p>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold">Tech Creator</h3>
+                <p className="mt-2">Designing and building modern web experiences.</p>
               </div>
             </Card>
             <Card>
-              <div className="p-8">
-                <GlitchText className="text-7xl" enableOnHover={false} speed={2}>Tech</GlitchText>
-                <GlitchText className="text-7xl mb-4" enableOnHover={false} speed={2}>Creator</GlitchText>
-                <p className="text-2xl leading-tight font-bold">
-                  Designing and building<br />
-                  modern web experiences.
-                </p>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold">Code Engineer</h3>
+                <p className="mt-2">Writing clean, efficient, and scalable code.</p>
               </div>
             </Card>
             <Card>
-              <div className="p-8">
-                <GlitchText className="text-7xl" enableOnHover={false} speed={2}>Digital</GlitchText>
-                <GlitchText className="text-7xl mb-4" enableOnHover={false} speed={2}>Builder</GlitchText>
-                <p className="text-2xl leading-tight font-bold">
-                  Bringing ideas to life from<br />
-                  concept to deployment.
-                </p>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold">Digital Builder</h3>
+                <p className="mt-2">Bringing ideas to life from concept to deployment.</p>
               </div>
             </Card>
           </CardSwap>
