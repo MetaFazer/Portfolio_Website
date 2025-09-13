@@ -64,19 +64,19 @@ export const AboutSection = () => {
             </h2>
 
             <p>
-  Hey! I’m <span className="font-semibold">Abhishek</span> — a 3rd-year Computer Science student who loves turning half-baked ideas into things you can actually click on. 
-  I’ve built <span className="font-semibold">AI apps</span> that roast your movie and series choices, a website to create your own portfolio, 
+  Hey! I'm <span className="font-semibold">Abhishek</span> — a 3rd-year Computer Science student who loves turning half-baked ideas into things you can actually click on. 
+  I've built <span className="font-semibold">AI apps</span> that roast your movie and series choices, a website to create your own portfolio, 
   and tools that make life a little less boring.
 </p>
 <p>
-  Right now, I’m vibecoding my way through <span className="font-semibold">React, Next.js, Express, and Tailwind</span>, 
+  Right now, I'm vibecoding my way through <span className="font-semibold">React, Next.js, Express, and Tailwind</span>, 
   while also sharpening my <span className="font-semibold">DSA skills in C++</span>. 
-  On the AI side, I’ve been diving deep into <span className="font-semibold">RAG</span> and <span className="font-semibold">agentic systems</span> — 
+  On the AI side, I've been diving deep into <span className="font-semibold">RAG</span> and <span className="font-semibold">agentic systems</span> — 
   not just answering questions, but making models act, reason, and adapt.
 </p>
 
 <p>
-  Beyond code, I’m curious about <span className="font-semibold">systems thinking, storytelling</span>, 
+  Beyond code, I'm curious about <span className="font-semibold">systems thinking, storytelling</span>, 
   and the little details that make tech feel human. 
   I thrive in spaces where <span className="font-semibold">experimentation</span> is encouraged, 
   and I enjoy collaborating with people who bring wild ideas to the table.

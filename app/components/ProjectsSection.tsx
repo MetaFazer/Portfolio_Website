@@ -4,7 +4,6 @@
 import Image, { StaticImageData } from 'next/image'; // FIX 1: Imported StaticImageData
 import FuzzyText from './FuzzyText';
 import ScrollStack, { ScrollStackItem } from './ScrollStack';
-
 import projectImage1 from './project_images/Vaultrix.png';
 import projectImage2 from './project_images/CineCritique.png';
 import projectImage3 from './project_images/Codebase.png';
